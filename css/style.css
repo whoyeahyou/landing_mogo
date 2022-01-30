@@ -243,10 +243,14 @@ hr {
 }
 
 
-/* ! STORY ABOUT US — UNIVERSAL STYLE FOR BLOCKS  */
+/* ! UNIVERSAL */
 
 .universal_section {
      padding: 80px 0;
+}
+
+.section_grey {
+     background-color: #f8f8f8;
 }
 
 .universal_header {
@@ -286,45 +290,52 @@ hr {
      font-family: Montserrat;
 }
 
-.about {
+
+/* ! STORY ABOUT US & CARDS !!! */
+
+
+.card {
      margin-top: 80px;
      display: flex;
      justify-content: space-between;
 }
 
-.about_item {
-     width: 380px;
+.card_inner {
      background-color: #95e1d3;
      position: relative;
      /* ! позиционируем текст поверх картинки */
 }
 
-.about_item:hover .about_item-text {
-     opacity: 1;
+.card_item {
+     width: 380px;
 }
 
-.about_item:hover .about_item-image {
+.card_inner:hover .card_item-image {
      transform: translate3d(-10px, -10px, 0);
      /* ! смещение картинки х-10 , н-10, z-0 */
 }
 
-.about_item:hover .about_item-image img {
+.card_inner:hover .card_item-text {
+     opacity: 1;
+}
+
+.card_inner:hover .card_item-image img {
      opacity: .1;
 }
 
-.about_item-image {
+.card_item-image {
      background: linear-gradient(to bottom, #f38181, #fce38a);
      transition: transform .5s linear;
      /* ! плавность при наведении на картинку */
 
 }
 
-.about_item-image img {
+.card_item-image img {
      display: block;
      transition: opacity .3s linear;
 }
 
-.about_item-text {
+.card_item-text {
      color: #fff;
      text-transform: uppercase;
      font-family: Montserrat-Bold;
@@ -341,6 +352,24 @@ hr {
      transition: opacity .3s linear;
 }
 
+.card_info {
+     margin-top: 20px;
+     text-align: center;
+}
+
+.card_name {
+     text-transform: uppercase;
+     color: #333;
+     font-size: 14px;
+     margin-bottom: 5px;
+}
+
+.card_prof {
+     color: #999;
+     font-style: italic;
+     font-size: 15px;
+     font-weight: 300;
+}
 
 /* ! BLOCK STATiSTiCS */
 
@@ -517,10 +546,6 @@ hr {
 /* ! JOE DOE */
 
 
-.jon_doe-grey {
-     background-color: #f8f8f8;
-}
-
 .jon_doe-reviews {
      padding: 0 110px;
      position: relative;
@@ -528,10 +553,11 @@ hr {
 
 .jon_doe-reviews_photo {
      position: absolute;
-     top: 0;
+     top: 8;
      left: 0;
      z-index: 1;
      border: 2px solid #95e1d3;
+     padding: 40px;
 }
 
 .jon_doe-item {
@@ -568,7 +594,7 @@ hr {
      color: transparent;
      /* ! скрываем текст у стрелок */
      position: absolute;
-     top: 50%;
+     top: 30%;
      z-index: 1;
      transform: translateY(-50%)
 }
@@ -594,3 +620,41 @@ hr {
 
 
 /* ! MEET OUR TEAM */
+
+
+.social {
+     display: flex;
+     justify-content: center;
+}
+
+.social_item {
+     width: 55px;
+     height: 55px;
+     padding: 12px 10px;
+     background-color: #fce38a;
+     border-right: 1px solid #f38181;
+     line-height: 1;
+     font-size: 30px;
+     text-decoration: none;
+     color: #f38181;
+     transition: background .2s linear, color .2s linear;
+}
+
+.social_item:last-child {
+     border-right: 0px;
+}
+
+.social_item:hover {
+     background-color: #f38181;
+     color: #fff;
+}
+
+
+/* ! BRANDS */
+
+
+.brand_logos {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
