@@ -35,14 +35,14 @@ body {
      font-family: Montserrat, sans-serif;
      font-size: 15px;
      line-height: 1.6;
-     /* ! межстрочный */
      color: #333;
 }
 
 .container {
      width: 100%;
-     max-width: 1200px;
+     max-width: 1230px;
      margin: 0 auto;
+     padding: 0 15px;
 }
 
 hr {
@@ -93,7 +93,6 @@ hr {
      color: #fff;
      text-decoration: none;
      transition: color .3s linear;
-     /* ! плавная смена цвета ссылки */
      position: relative;
 }
 
@@ -107,11 +106,8 @@ hr {
      top: 100%;
      left: 0;
      z-index: 1;
-
      opacity: 0;
-     /* ! полоску не видно */
      transition: opacity .3s linear;
-     /* ! плавное появление полоски */
 }
 
 .header_nav-link:hover {
@@ -120,7 +116,6 @@ hr {
 
 .header_nav-link:hover:after {
      opacity: 1;
-     /* ! полоску видно при наведении на ссылку */
 }
 
 
@@ -290,24 +285,25 @@ hr {
 
 
 .card {
-     margin-top: 80px;
+     margin: 80px -15px 0;
      display: flex;
      justify-content: space-between;
+     flex-wrap: wrap;
 }
 
 .card_inner {
      background-color: #95e1d3;
      position: relative;
-     /* ! позиционируем текст поверх картинки */
 }
 
 .card_item {
-     width: 380px;
+     width: 33.33%;
+     padding: 0 15px;
 }
 
 .card_inner:hover .card_item-image {
      transform: translate3d(-10px, -10px, 0);
-     /* ! смещение картинки х-10 , н-10, z-0 */
+     /* ! х-10 , y-10, z-0 */
 }
 
 .card_inner:hover .card_item-text {
@@ -321,11 +317,11 @@ hr {
 .card_item-image {
      background: linear-gradient(to bottom, #f38181, #fce38a);
      transition: transform .5s linear;
-     /* ! плавность при наведении на картинку */
-
 }
 
 .card_item-image img {
+     max-width: 100%;
+     height: auto;
      display: block;
      transition: opacity .3s linear;
 }
@@ -336,7 +332,6 @@ hr {
      font-family: Montserrat-Bold, sans-serif;
      font-size: 18px;
      text-align: center;
-     /* ! позиционируем текст поверх картинки */
      opacity: 0;
      width: 100%;
      position: absolute;
@@ -365,6 +360,7 @@ hr {
      font-size: 15px;
 }
 
+
 /* ! STATiSTiCS */
 
 
@@ -374,6 +370,7 @@ hr {
 
 .statistics-stat {
      display: flex;
+     flex-wrap: wrap;
 }
 
 .statistics-stat_item {
@@ -406,13 +403,25 @@ hr {
 
 .services {
      display: flex;
+     flex-wrap: wrap;
 }
 
 .services_item {
-     flex: 1 1 0;
-     padding-left: 85px;
-     padding-right: 35px;
+     width: 33.33%;
+     padding: 0 35px 40px 85px;
      position: relative;
+     margin-bottom: 40px;
+}
+
+.sevices_item-border {
+     border-bottom: 1px solid #e5e5e5;
+}
+
+.services_item:nth-child(4),
+.services_item:nth-child(5),
+.services_item:nth-child(6) {
+     margin-bottom: 0;
+     padding-bottom: 0;
 }
 
 .services_item-icon {
@@ -513,8 +522,6 @@ hr {
      transform: translateY(-20%) rotate(135deg);
 }
 
-/* ! стрелочки бордером */
-
 .we_do-accordion_icon {
      position: absolute;
      top: 50%;
@@ -582,12 +589,9 @@ hr {
      background-color: #f38181;
 }
 
-/* ! красная полоска рядом с автором */
-
 .jon_doe-reviews_arrows {
      font-size: 0;
      color: transparent;
-     /* ! скрываем текст у стрелок */
      position: absolute;
      top: 50%;
      z-index: 1;
@@ -1094,6 +1098,7 @@ hr {
 
 /* ! copyright */
 
+
 .copyright {
      padding: 20px 0;
      border-top: 1px solid #e5e5e5;
@@ -1104,4 +1109,164 @@ hr {
 
 .copyright span {
      color: #f38181;
+}
+
+
+
+
+/* ? ================= MEDIA ================= */
+
+
+
+
+/* ! PC  */
+
+
+@media (max-width: 1230px) {
+
+     /* intro */
+
+     .intro-title {
+          font-size: 120px;
+     }
+
+     .intro-sup_title {
+          font-size: 62px;
+     }
+
+}
+
+
+/* ! TABLET */
+
+
+@media (max-width: 990px) {
+
+     /* intro */
+
+     .intro-title {
+          font-size: 95px;
+     }
+
+     .intro-sup_title {
+          font-size: 52px;
+     }
+
+     /* statistics */
+
+     .statistics-stat {
+          justify-content: center;
+     }
+
+     .statistics-stat_item {
+          flex: none;
+          width: 33.33%;
+          border: 0;
+          padding-top: 30px;
+          padding-bottom: 30px;
+     }
+
+     .statistics-stat_item:last-child {
+          border: 0;
+     }
+
+     /* services */
+
+     .services_item {
+          width: 50%;
+          padding-bottom: 0;
+     }
+
+     .sevices_item-border {
+          border-bottom: 0;
+     }
+}
+
+
+/* ! TABLET - PORTRAIT */
+
+
+@media (max-width: 770px) {
+
+     /* intro */
+
+     .header_nav {
+          display: none;
+     }
+
+     .slider_text {
+          display: none;
+     }
+
+     .intro-slider_item.active:before {
+          width: 50%;
+     }
+
+     .universal_section {
+          padding: 40px 0;
+     }
+
+     /* cards */
+
+     .card {
+          justify-content: center;
+     }
+
+     .card_item {
+          width: 100%;
+          max-width: 410px;
+          margin-bottom: 30px;
+          margin-top: 0;
+     }
+
+     .card_item:last-child {
+          margin-bottom: 0;
+     }
+
+     /* services */
+
+     .services_item {
+          width: 100%;
+     }
+
+     .services_item:nth-child(4),
+     .services_item:nth-child(5) {
+          margin-bottom: 40px;
+          padding-bottom: 0;
+     }
+}
+
+
+/* ! MOBILE */
+
+
+@media (max-width: 575px) {
+
+     /* intro */
+
+     .intro-title {
+          font-size: 65px;
+     }
+
+     .intro-sup_title {
+          font-size: 40px;
+     }
+
+     /* universal */
+
+     .universal_header {
+          margin-bottom: 40px;
+     }
+
+     /* statistics */
+
+     .statistics-stat_item {
+          width: 100%;
+          border-bottom: 1px solid #b5eae0;
+     }
+
+     .statistics-stat_item:last-child {
+          border-bottom: 0;
+     }
+
 }
