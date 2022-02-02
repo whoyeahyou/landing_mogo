@@ -270,13 +270,14 @@ hr {
      width: 60px;
      height: 3px;
      background-color: #f38181;
-     margin: 30px auto;
+     margin: 30px auto 60px;
 }
 
 .universal_text {
      font-size: 15px;
      color: #999;
      font-family: Montserrat, sans-serif;
+     margin-bottom: 50px;
 }
 
 
@@ -284,7 +285,7 @@ hr {
 
 
 .card {
-     margin: 60px -15px 0;
+     margin: 0 -15px 0;
      display: flex;
      justify-content: space-between;
      flex-wrap: wrap;
@@ -461,9 +462,11 @@ hr {
 
 .devices_item {
      display: block;
+     max-width: 100%;
+     height: auto;
 }
 
-.devices_intem-iphone {
+.devices_item-iphone {
      position: absolute;
      bottom: -80px;
      right: 0;
@@ -476,10 +479,19 @@ hr {
 
 .we_do {
      display: flex;
+     flex-wrap: wrap;
+     margin: 0 -15px;
 }
 
 .we_do-item {
      width: 50%;
+     padding: 0 15px;
+}
+
+.we_do-image {
+     display: block;
+     max-width: 100%;
+     height: auto;
 }
 
 .we_do-accordion_item {
@@ -659,7 +671,7 @@ hr {
 }
 
 
-/* ! WHAT WE DO */
+/* ! OUR WORK */
 
 
 .works {
@@ -716,7 +728,7 @@ hr {
 }
 
 
-/* ! CLIENTS */
+/* ! HAPPY CLIENTS */
 
 
 .section_clients {
@@ -1216,7 +1228,6 @@ hr {
           width: 100%;
           max-width: 410px;
           margin-bottom: 30px;
-          margin-top: 0;
      }
 
      .card_item:last-child {
@@ -1225,14 +1236,37 @@ hr {
 
      /* services */
 
+     .services {
+          justify-content: center;
+     }
+
      .services_item {
           width: 100%;
+          max-width: 400px;
+          padding-right: 0;
      }
 
      .services_item:nth-child(4),
-     .services_item:nth-child(5) {
+     .services_item:nth-child(5),
+     .services_item:nth-child(6) {
           margin-bottom: 40px;
           padding-bottom: 0;
+     }
+
+     /* amazing devices */
+
+     .section-devices {
+          padding-bottom: 0;
+     }
+
+     /* what we do */
+
+     .we_do-image {
+          display: none;
+     }
+
+     .we_do-item {
+          width: 100%;
      }
 }
 
@@ -1269,4 +1303,15 @@ hr {
           border-bottom: 0;
      }
 
+     /* amazing devices */
+
+     .devices {
+          max-width: 320px;
+     }
+
+     .devices_item-iphone {
+          width: 180px;
+          bottom: -50px;
+          right: -80px;
+     }
 }
