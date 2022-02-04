@@ -1,0 +1,13 @@
+@media (max-width: 415px) {
+
+     /* intro */
+
+     .intro-title {
+          font-size: 45px;
+     }
+
+     .intro-sup_title {
+          font-size: 30px;
+     }
+
+}
