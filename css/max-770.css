@@ -1,0 +1,164 @@
+@media (max-width: 770px) {
+
+     /* intro */
+
+     .intro {
+          min-height: 650px;
+     }
+
+     /* header */
+
+     .header_nav {
+          display: none;
+     }
+
+     .slider_text {
+          display: none;
+     }
+
+     .intro-slider_item.active:before {
+          width: 50%;
+     }
+
+     .universal_section {
+          padding: 40px 0;
+     }
+
+     /* cards */
+
+     .card {
+          justify-content: center;
+     }
+
+     .card_item {
+          width: 100%;
+          max-width: 410px;
+          margin-bottom: 30px;
+     }
+
+     .card_item:last-child {
+          margin-bottom: 0;
+     }
+
+     /* services */
+
+     .services {
+          justify-content: center;
+     }
+
+     .services_item {
+          width: 100%;
+          max-width: 400px;
+          padding-right: 0;
+     }
+
+     .services_item:nth-child(4),
+     .services_item:nth-child(5),
+     .services_item:nth-child(6) {
+          margin-bottom: 40px;
+          padding-bottom: 0;
+     }
+
+     /* amazing devices */
+
+     .section-devices {
+          padding-bottom: 0;
+     }
+
+     /* we do */
+
+     .we_do-image {
+          display: none;
+     }
+
+     .we_do-item {
+          width: 100%;
+     }
+
+     /* jon doe */
+
+     .jon_doe-reviews_photo {
+          position: static;
+          margin: 0 auto 40px;
+     }
+
+     .jon_doe-item {
+          padding-left: 0;
+          text-align: center;
+     }
+
+     .jon_doe-reviews_arrows {
+          top: 70%;
+     }
+
+     .jon_doe-item_text {
+          font-size: 15px;
+     }
+
+     /* brands */
+
+     .brand_logos {
+          flex-wrap: wrap;
+          justify-content: center;
+     }
+
+     /* works */
+
+     .works {
+          flex-wrap: wrap;
+          margin-bottom: 30px;
+     }
+
+     .works_col {
+          flex: none;
+          width: 50%;
+     }
+
+     /* clients */
+
+     .clients_photo {
+          position: static;
+     }
+
+     .clients_item {
+          text-align: center;
+          padding: 0 60px;
+     }
+
+     .clients_name {
+          margin: 10px 0;
+     }
+
+     .clients_text:before {
+          margin: 20px auto;
+     }
+
+     /* blog */
+
+     .blog {
+          max-width: 380px;
+          margin: 0 auto;
+     }
+
+     .blog_item {
+          width: 100%;
+          margin-bottom: 30px;
+          text-align: center;
+     }
+
+     .blog_item:last-child {
+          margin-bottom: 0;
+     }
+
+     /* footer */
+
+     .footer_col-center,
+     .footer_col-right {
+          width: 100%;
+     }
+
+     .footer_col-center {
+          margin-top: 30px;
+     }
+
+}

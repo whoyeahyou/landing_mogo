@@ -1,0 +1,19 @@
+@media (max-width: 1230px) {
+
+     /* intro */
+
+     .intro-title {
+          font-size: 120px;
+     }
+
+     .intro-sup_title {
+          font-size: 62px;
+     }
+
+     /* jon doe */
+
+     .jon_doe-item_text {
+          font-size: 23px;
+     }
+
+}
