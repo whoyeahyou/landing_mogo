@@ -38,6 +38,10 @@ body {
      color: #333;
 }
 
+.all_wrapper {
+     overflow: hidden;
+}
+
 .container {
      width: 100%;
      max-width: 1230px;
@@ -89,7 +93,6 @@ hr {
      display: inline-block;
      vertical-align: top;
      margin: 0 15px;
-
      color: #fff;
      text-decoration: none;
      transition: color .3s linear;
@@ -398,7 +401,7 @@ hr {
 }
 
 
-/* ! AMAZING SERVICES */
+/* ! SERVICES */
 
 
 .services {
@@ -436,6 +439,7 @@ hr {
      color: #333;
      text-transform: uppercase;
      margin-bottom: 10px;
+     font-family: Montserrat-Bold, sans-serif;
 }
 
 .services_item-text {
@@ -474,7 +478,7 @@ hr {
 }
 
 
-/* ! WHAT WE DO */
+/* ! WE DO */
 
 
 .we_do {
@@ -541,17 +545,18 @@ hr {
      transform: translateY(-50%);
 }
 
-.we_do-accordion_content {
-     padding: 15px 20px;
-     font-size: 15px;
-     color: #999;
-     display: none;
-}
-
 .we_do-accordion_title {
      font-size: 14px;
      color: #333;
      text-transform: uppercase;
+}
+
+.we_do-accordion_content {
+     padding: 15px 35px 15px 20px;
+     font-size: 15px;
+     color: #999;
+     display: none;
+     font-style: italic;
 }
 
 
@@ -589,6 +594,7 @@ hr {
 
 .jon_doe-item_author {
      font-family: Kaushan, sans-serif;
+     font-weight: 700;
      font-size: 24px;
      color: #333;
 }
@@ -632,7 +638,7 @@ hr {
 }
 
 
-/* ! MEET OUR TEAM */
+/* ! OUR TEAM */
 
 
 .social {
@@ -683,7 +689,7 @@ hr {
      height: auto;
 }
 
-/* ! OUR WORK */
+/* ! WORKS */
 
 
 .works {
@@ -708,14 +714,13 @@ hr {
 }
 
 .works_image {
-     max-width: 100%;
+     width: 100%;
      height: auto;
      display: block;
-     transition: opacity .2s linear;
+     transition: opacity .4s linear;
 }
 
 .works_info {
-     opacity: 0;
      width: 100%;
      padding: 0 15px;
      text-align: center;
@@ -723,8 +728,9 @@ hr {
      position: absolute;
      top: 50%;
      left: 0;
-     z-index: 1;
      transform: translate3d(0, -50%, 0);
+     opacity: 0;
+     z-index: 1;
      transition: opacity .2s linear;
 }
 
@@ -740,7 +746,7 @@ hr {
 }
 
 
-/* ! HAPPY CLIENTS */
+/* ! CLIENTS */
 
 
 .section_clients {
@@ -772,6 +778,7 @@ hr {
 }
 
 .clients_name {
+     font-weight: 700;
      font-size: 14px;
      color: #333;
      text-transform: uppercase;
@@ -799,12 +806,13 @@ hr {
 }
 
 
-/* ! OUR STORIES */
+/* ! BLOG */
 
 
 .blog {
      display: flex;
      justify-content: space-between;
+     flex-wrap: wrap;
 }
 
 .blog_item {
@@ -812,8 +820,8 @@ hr {
 }
 
 .blog_header {
-     margin-bottom: 14px;
      position: relative;
+     margin-bottom: 14px;
 }
 
 .blog_photo {
@@ -823,7 +831,8 @@ hr {
 }
 
 .blog_date {
-     padding: 10px 20px;
+     width: 75px;
+     padding: 10px 0;
      background-color: #95e1d3;
      font-style: italic;
      font-size: 15px;
@@ -935,6 +944,12 @@ hr {
      padding-bottom: 65px;
      display: flex;
      justify-content: space-between;
+     flex-wrap: wrap;
+     margin: 0 -20px;
+}
+
+.footer_col {
+     padding: 0 20px;
 }
 
 
@@ -1111,12 +1126,14 @@ hr {
 }
 
 .footer_instagram-item {
-     width: 32.33%;
+     width: 33%;
      border-bottom: 1px solid #fff;
 }
 
 .footer_instagram-item img {
      display: block;
+     max-width: 100%;
+     height: auto;
 }
 
 
@@ -1163,6 +1180,7 @@ hr {
      .jon_doe-item_text {
           font-size: 23px;
      }
+
 }
 
 
@@ -1244,6 +1262,29 @@ hr {
      .clients_item:last-child {
           margin-bottom: 0;
      }
+
+     /* footer */
+
+     .footer_col-left {
+          width: 100%;
+     }
+
+     .footer_col-center,
+     .footer_col-right {
+          width: 50%;
+     }
+
+     /* footer_instagram */
+
+     .footer_instagram {
+          justify-content: flex-start;
+     }
+
+     .footer_instagram-item {
+          width: auto;
+          border-right: 1px solid #fff;
+     }
+
 }
 
 
@@ -1311,7 +1352,7 @@ hr {
           padding-bottom: 0;
      }
 
-     /* what we do */
+     /* we do */
 
      .we_do-image {
           display: none;
@@ -1368,13 +1409,45 @@ hr {
 
      .clients_item {
           text-align: center;
-          padding-left: 0;
-          padding-right: 0;
+          padding: 0 60px;
+     }
+
+     .clients_name {
+          margin: 10px 0;
      }
 
      .clients_text:before {
-          margin: 15px auto;
+          margin: 20px auto;
      }
+
+     /* blog */
+
+     .blog {
+          max-width: 380px;
+          margin: 0 auto;
+     }
+
+     .blog_item {
+          width: 100%;
+          margin-bottom: 30px;
+          text-align: center;
+     }
+
+     .blog_item:last-child {
+          margin-bottom: 0;
+     }
+
+     /* footer */
+
+     .footer_col-center,
+     .footer_col-right {
+          width: 100%;
+     }
+
+     .footer_col-center {
+          margin-top: 30px;
+     }
+
 }
 
 
@@ -1434,6 +1507,23 @@ hr {
 
      .works_col {
           width: 100%;
+     }
+
+     /* footer */
+
+     .subscribe {
+          flex-wrap: wrap;
+          max-width: none;
+     }
+
+     .subscribe_input,
+     .subscribe_button {
+          width: 100%;
+     }
+
+     .subscribe_input {
+          margin-bottom: 10px;
+          border-right: 1px solid #e7e7e7;
      }
 
 }
