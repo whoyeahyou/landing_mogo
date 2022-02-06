@@ -4,7 +4,6 @@ $(function () {
           introH = $('#intro').innerHeight(),
           scrollOffset = $(window);
 
-
      // fixed header
 
      checkScroll(scrollOffset);
@@ -39,6 +38,13 @@ $(function () {
           }, 1200);
      });
 
+     // burger toggle
+
+     $('#nav_toggle').on('click', function (event) {
+          event.preventDefault();
+          $(this).toggleClass('active');
+          $('#nav').toggleClass('active');
+     });
 
 
 

@@ -22,6 +22,10 @@
           background: #eb8b8d;
      }
 
+     .header_nav.active {
+          display: block;
+     }
+
      .header_nav-link {
           display: block;
           padding: 20px 0 20px 0;

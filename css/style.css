@@ -102,6 +102,7 @@ body {
      font-family: Montserrat-Bold, sans-serif;
      font-size: 30px;
      color: #fff;
+     cursor: pointer;
 }
 
 .header_nav {
@@ -149,7 +150,6 @@ body {
 
 .header_nav-link.active {
      color: #fce38a;
-
 }
 
 /* burger */
@@ -157,17 +157,20 @@ body {
 .nav_toggle {
      width: 30px;
      padding: 10px 0;
-     position: absolute;
-     top: 23px;
-     right: 17px;
-     z-index: 1;
-
+     display: none;
      font-size: 0;
      color: transparent;
      border: 0;
      background: none;
      cursor: pointer;
-     display: none;
+     position: absolute;
+     top: 23px;
+     right: 17px;
+     z-index: 1;
+}
+
+.nav_toggle:focus {
+     outline: 0;
 }
 
 .nav_toggle-item {
