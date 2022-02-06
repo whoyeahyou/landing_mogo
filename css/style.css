@@ -49,33 +49,53 @@ body {
      padding: 0 15px;
 }
 
-hr {
+/* hr {
      display: block;
      width: 100%;
      height: 1px;
      border: 0;
      background-color: #e5e5e5;
      margin: 40px 0;
-}
+} */
 
 
 /* ! HEADER */
 
 
 .header {
+     padding-top: 30px;
      width: 100%;
      position: absolute;
      top: 0;
      left: 0;
+     right: 0;
      z-index: 100;
 }
+
+/* for js */
+
+.header.fixed {
+     padding: 10px 0;
+     background: #eb8b9d;
+     position: fixed;
+     top: 0;
+     right: 0;
+     left: 0;
+     transform: translate3d(0, 0, 0);
+     box-shadow: 0 10px 10px rgba(0, 0, 0, .3);
+}
+
+.header.active {
+     background: #eb8b8d;
+}
+
+/* close for js */
 
 .header_inner {
      font-family: Montserrat-Bold, sans-serif;
      display: flex;
      justify-content: space-between;
      align-items: center;
-     padding-top: 30px;
 }
 
 .header_logo {
@@ -87,6 +107,7 @@ hr {
 .header_nav {
      text-transform: uppercase;
      font-size: 14px;
+     transition: .3s linear;
 }
 
 .header_nav-link {
@@ -97,6 +118,10 @@ hr {
      text-decoration: none;
      transition: color .3s linear;
      position: relative;
+}
+
+.header_nav-link:last-child {
+     margin-right: 0;
 }
 
 .header_nav-link:after {
@@ -120,6 +145,76 @@ hr {
 .header_nav-link:hover:after {
      opacity: 1;
 }
+
+/* burger */
+
+.nav_toggle {
+     width: 30px;
+     padding: 10px 0;
+     position: absolute;
+     top: 23px;
+     right: 17px;
+     z-index: 1;
+
+     font-size: 0;
+     color: transparent;
+     border: 0;
+     background: none;
+     cursor: pointer;
+     display: none;
+}
+
+.nav_toggle-item {
+     display: block;
+     width: 100%;
+     height: 3px;
+     background: #fff;
+     position: absolute;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     margin: auto;
+     transition: background .2s linear;
+}
+
+.nav_toggle-item:before,
+.nav_toggle-item:after {
+     content: "";
+     width: 100%;
+     height: 3px;
+     background: #fff;
+     position: absolute;
+     left: 0;
+     z-index: 1;
+     transition: transform .2s linear;
+}
+
+.nav_toggle-item:before {
+     top: -8px;
+}
+
+.nav_toggle-item:after {
+     bottom: -8px;
+}
+
+/* for js */
+
+.nav_toggle.active .nav_toggle-item {
+     background: none;
+}
+
+.nav_toggle.active .nav_toggle-item:before {
+     transform-origin: left top;
+     transform: rotate(45deg) translateX(-3px);
+}
+
+.nav_toggle.active .nav_toggle-item:after {
+     transform-origin: left bottom;
+     transform: rotate(-45deg) translateX(-3px);
+}
+
+/* close for js */
 
 
 /* ! INTRO */

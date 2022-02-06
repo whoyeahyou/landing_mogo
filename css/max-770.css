@@ -8,9 +8,40 @@
 
      /* header */
 
+     .header {
+          padding: 10px 0;
+     }
+
      .header_nav {
           display: none;
+          width: 100%;
+          text-align: center;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background: #eb8b8d;
      }
+
+     .header_nav-link {
+          display: block;
+          padding: 20px 0 20px 0;
+          margin: 0;
+     }
+
+     .header_nav-link:last-child {
+          margin: 0;
+          padding-left: 8px;
+     }
+
+     .header_nav-link:after {
+          background: none;
+     }
+
+     .nav_toggle {
+          display: block;
+     }
+
+     /* slider */
 
      .slider_text {
           display: none;
@@ -19,6 +50,8 @@
      .intro-slider_item.active:before {
           width: 50%;
      }
+
+     /* universal */
 
      .universal_section {
           padding: 40px 0;
