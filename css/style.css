@@ -142,8 +142,14 @@ body {
      color: #fce38a;
 }
 
-.header_nav-link:hover:after {
+.header_nav-link:hover:after,
+.header_nav-link.active:after {
      opacity: 1;
+}
+
+.header_nav-link.active {
+     color: #fce38a;
+
 }
 
 /* burger */
@@ -788,6 +794,9 @@ body {
 
 /* ! WORKS */
 
+.section_works {
+     padding: 80px 0 0;
+}
 
 .works {
      display: flex;
@@ -841,7 +850,6 @@ body {
      font-style: italic;
      font-size: 15px;
 }
-
 
 /* ! CLIENTS */
 
