@@ -184,7 +184,7 @@ body {
      bottom: 0;
      left: 0;
      margin: auto;
-     transition: background .2s linear;
+     transition: background .3s linear;
 }
 
 .nav_toggle-item:before,
@@ -196,7 +196,7 @@ body {
      position: absolute;
      left: 0;
      z-index: 1;
-     transition: transform .2s linear;
+     transition: transform .3s linear;
 }
 
 .nav_toggle-item:before {
@@ -670,12 +670,18 @@ body {
 
 
 .jon_doe-reviews {
-     padding: 0 110px;
      position: relative;
 }
 
+.jon_doe-reviews .slick-slider {
+     padding: 0 110px;
+
+}
+
 .jon_doe-item {
-     padding-left: 250px;
+     min-height: 210px;
+     padding-left: 255px;
+     position: relative;
 }
 
 .jon_doe-reviews_photo {
@@ -685,8 +691,8 @@ body {
      border: 2px solid #95e1d3;
      border-radius: 50%;
      position: absolute;
-     top: -15px;
-     left: 70px;
+     top: 0;
+     left: 0;
      z-index: 1;
 }
 
@@ -695,11 +701,11 @@ body {
      font-size: 24px;
      font-style: italic;
      color: #999;
-     position: relative;
 }
 
 .jon_doe-item_author {
      font-family: Kaushan, sans-serif;
+     font-style: italic;
      font-weight: 700;
      font-size: 24px;
      color: #333;
@@ -715,16 +721,30 @@ body {
      background-color: #f38181;
 }
 
-.jon_doe-reviews_arrows {
+
+/* slider slick */
+
+
+.slick-arrow {
+     cursor: pointer;
      font-size: 0;
-     top: 50%;
      color: transparent;
      position: absolute;
+     top: 50%;
      z-index: 1;
-     transform: translateY(-50%)
+     transform: translateY(-50%);
+
+     display: block;
+     border: 0;
+     background: none;
 }
 
-.jon_doe-reviews_arrows:after {
+.slick-arrow:focus {
+     outline: 0;
+}
+
+
+.slick-arrow:after {
      content: '';
      display: block;
      width: 16px;
@@ -733,15 +753,18 @@ body {
      border-left: 2px solid #ccc;
 }
 
-.jon_doe-reviews_arrows--prew {
+.slick-prev {
      left: 0;
      transform: rotate(-45deg);
 }
 
-.jon_doe-reviews_arrows--next {
+.slick-next {
      right: 0;
      transform: rotate(135deg);
 }
+
+
+/* end slider slick */
 
 
 /* ! OUR TEAM */

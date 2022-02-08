@@ -41,21 +41,25 @@
 
      /* jon doe */
 
-     .jon_doe-reviews {
+     .jon_doe-reviews .slick-slider {
           padding: 0 60px;
      }
 
      .jon_doe-reviews_photo {
-          width: 190px;
-          height: 190px;
+          width: 150px;
+          height: 150px;
      }
 
      .jon_doe-item {
-          padding-left: 250px;
+          padding-left: 175px;
      }
 
      .jon_doe-item_text {
           font-size: 18px;
+     }
+
+     .slick-arrow {
+          top: 35%;
      }
 
      /* clients */

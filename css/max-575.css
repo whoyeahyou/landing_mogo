@@ -46,9 +46,8 @@
 
      /* jon doe */
 
-     .jon_doe-reviews_photo {
-          width: 140px;
-          height: 140px;
+     .jon_doe-reviews .slick-slider {
+          padding: 0;
      }
 
      /* works */

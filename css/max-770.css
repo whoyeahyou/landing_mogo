@@ -116,7 +116,7 @@
 
      .jon_doe-reviews_photo {
           position: static;
-          margin: 0 auto 40px;
+          margin: 0 auto 20px;
      }
 
      .jon_doe-item {
@@ -124,8 +124,12 @@
           text-align: center;
      }
 
-     .jon_doe-reviews_arrows {
-          top: 70%;
+     .jon_doe-reviews .slick-slider {
+          padding: 0;
+     }
+
+     .slick-arrow {
+          top: 20%;
      }
 
      .jon_doe-item_text {

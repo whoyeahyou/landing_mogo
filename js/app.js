@@ -47,18 +47,22 @@ $(function () {
      });
 
 
+     // accordion
 
+     $('[data-collapse]').on('click', function (event) {
+          event.preventDefault();
+          let $this = $(this),
+               blockId = $this.data('collapse');
+          $this.toggleClass('active');
+     });
 
+     // slider jon doe
 
-
-
-
-
-
-
-
-
-
-
+     $('[data-slider]').slick({
+          Infinity: true,
+          fade: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+     });
 
 });

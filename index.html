@@ -12,6 +12,7 @@
      <link rel="stylesheet" href="css/max-770.css">
      <link rel="stylesheet" href="css/max-575.css">
      <link rel="stylesheet" href="css/max-415.css">
+     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
      <title>MOGO TEMPLATE</title>
 </head>
@@ -284,12 +285,13 @@
                          <div class="we_do-item">
                               <div class="we_do-accordion">
 
-                                   <div class="we_do-accordion_item">
+                                   <div class="we_do-accordion_item" data-collapse="#wedo_1">
                                         <div class="we_do-accordion_header">
                                              <img class="we_do-accordion_icon" src="img/4_what_we_do/img_1.png" alt="">
                                              <div class="we_do-accordion_title">Photography</div>
                                         </div>
-                                        <div class="we_do-accordion_content">Lorem, ipsum dolor sit amet consectetur
+                                        <div class="we_do-accordion_content" id="wedo_1">Lorem, ipsum dolor sit amet
+                                             consectetur
                                              adipisicing elit. Asperiores, repudiandae ipsam odit modi impedit
                                              aspernatur
                                              corrupti quod rerum laboriosam cumque explicabo necessitatibus molestias
@@ -297,12 +299,13 @@
                                              voluptas perferendis, sapiente nisi dolor rerum?</div>
                                    </div>
 
-                                   <div class="we_do-accordion_item active">
+                                   <div class="we_do-accordion_item" data-collapse="#wedo_2">
                                         <div class="we_do-accordion_header">
                                              <img class="we_do-accordion_icon" src="img/4_what_we_do/img_2.png" alt="">
                                              <div class="we_do-accordion_title">Creativity</div>
                                         </div>
-                                        <div class="we_do-accordion_content">Lorem, ipsum dolor sit amet consectetur
+                                        <div class="we_do-accordion_content" id="wedo_2">Lorem, ipsum dolor sit amet
+                                             consectetur
                                              adipisicing elit. Asperiores, repudiandae ipsam odit modi impedit
                                              aspernatur
                                              corrupti quod rerum laboriosam cumque explicabo necessitatibus molestias
@@ -310,12 +313,13 @@
                                              voluptas perferendis, sapiente nisi dolor rerum?</div>
                                    </div>
 
-                                   <div class="we_do-accordion_item">
+                                   <div class="we_do-accordion_item" data-collapse="#wedo_3">
                                         <div class="we_do-accordion_header">
                                              <img class="we_do-accordion_icon" src="img/4_what_we_do/img_3.png" alt="">
                                              <div class="we_do-accordion_title">Web design</div>
                                         </div>
-                                        <div class="we_do-accordion_content">Lorem, ipsum dolor sit amet consectetur
+                                        <div class="we_do-accordion_content" id="wedo_3">Lorem, ipsum dolor sit amet
+                                             consectetur
                                              adipisicing elit. Asperiores, repudiandae ipsam odit modi impedit
                                              aspernatur
                                              corrupti quod rerum laboriosam cumque explicabo necessitatibus molestias
@@ -338,17 +342,38 @@
 
                     <div class="jon_doe-reviews">
 
-                         <a class="jon_doe-reviews_arrows jon_doe-reviews_arrows--prew" href="#">prew</a>
-                         <a class="jon_doe-reviews_arrows jon_doe-reviews_arrows--next" href="#">next</a>
+                         <div data-slider>
 
-                         <img class="jon_doe-reviews_photo" src="img/joshua_earle.jpg" alt="">
-                         <div class="jon_doe-item">
-                              <div class="jon_doe-item_text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                   sed
-                                   do eiusmod tempor, in veniam deleniti laudantium. Fugiat omnis itaque obcaecati
-                                   doloremque
-                                   minima cum."</div>
-                              <div class="jon_doe-item_author"><i>Joshua Earle</i></div>
+                              <div>
+                                   <div class="jon_doe-item">
+                                        <img class="jon_doe-reviews_photo" src="img/joshua_earle.jpg" alt="">
+                                        <div class="jon_doe-item_text">"Lorem ipsum dolor sit amet, consectetur
+                                             adipisicing
+                                             elit,
+                                             sed
+                                             do eiusmod tempor, in veniam deleniti laudantium. Fugiat omnis itaque
+                                             obcaecati
+                                             doloremque
+                                             minima cum."</div>
+                                        <div class="jon_doe-item_author">Jon Doe</div>
+                                   </div>
+                              </div>
+
+                              <div>
+                                   <div class="jon_doe-item">
+                                        <img class="jon_doe-reviews_photo" src="img/joshua_earle.jpg" alt="">
+                                        <div class="jon_doe-item_text">"Lorem ipsum dolor sit amet, consectetur
+                                             adipisicing
+                                             elit,
+                                             sed
+                                             do eiusmod tempor, in veniam deleniti laudantium. Fugiat omnis itaque
+                                             obcaecati
+                                             doloremque
+                                             minima cum."</div>
+                                        <div class="jon_doe-item_author">Jon Doe</div>
+                                   </div>
+                              </div>
+
                          </div>
 
                     </div>
@@ -614,19 +639,38 @@
 
                     <div class="jon_doe-reviews">
 
-                         <a class="jon_doe-reviews_arrows jon_doe-reviews_arrows--prew" href="#">prew</a>
-                         <a class="jon_doe-reviews_arrows jon_doe-reviews_arrows--next" href="#">next</a>
+                         <div data-slider>
 
-                         <img class="jon_doe-reviews_photo" src="img/joshua_earle.jpg" alt="">
+                              <div>
+                                   <div class="jon_doe-item">
+                                        <img class="jon_doe-reviews_photo" src="img/joshua_earle.jpg" alt="">
+                                        <div class="jon_doe-item_text">"Lorem ipsum dolor sit amet, consectetur
+                                             adipisicing
+                                             elit,
+                                             sed
+                                             do eiusmod tempor, in veniam deleniti laudantium. Fugiat omnis itaque
+                                             obcaecati
+                                             doloremque
+                                             minima cum."</div>
+                                        <div class="jon_doe-item_author">Jon Doe</div>
+                                   </div>
+                              </div>
 
-                         <div class="jon_doe-item">
+                              <div>
+                                   <div class="jon_doe-item">
+                                        <img class="jon_doe-reviews_photo" src="img/joshua_earle.jpg" alt="">
+                                        <div class="jon_doe-item_text">"Lorem ipsum dolor sit amet, consectetur
+                                             adipisicing
+                                             elit,
+                                             sed
+                                             do eiusmod tempor, in veniam deleniti laudantium. Fugiat omnis itaque
+                                             obcaecati
+                                             doloremque
+                                             minima cum."</div>
+                                        <div class="jon_doe-item_author">Jon Doe</div>
+                                   </div>
+                              </div>
 
-                              <div class="jon_doe-item_text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                   sed
-                                   do eiusmod tempor, in veniam deleniti laudantium. Fugiat omnis itaque obcaecati
-                                   doloremque
-                                   minima cum."</div>
-                              <div class="jon_doe-item_author"><i>Jon Doe</i></div>
                          </div>
 
                     </div>
@@ -941,6 +985,7 @@
      <!-- /all wrapper -->
 
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
      <script src="js/app.js"></script>
      <script src="https://kit.fontawesome.com/276aea9f34.js" crossorigin="anonymous"></script>
 
